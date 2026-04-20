@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MemberKonradFamily</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body { 
+            background-color: #0a0a0a;
+            color: #e0e0e0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding-bottom: 50px;
+        }
+        
+        /* ส่วน Header สำหรับ Logo อย่างเดียว */
+        .logo-section {
+            padding: 60px 0 20px 0;
+            text-align: center;
+            background: radial-gradient(circle, #2a0000 0%, #0a0a0a 100%);
+        }
+        
+       .main-logo {
+            /* ปรับขนาดความกว้างตรงนี้ (ลองเริ่มที่ 500px ถ้าใหญ่ไปให้ลดเหลือ 400px ครับ) */
+            width: 500px; 
+            height: auto;
+            display: block;
+            margin: 0 auto 30px auto;
+    
+            /* เพิ่มขอบขาวให้หนาและชัดขึ้น เพื่อให้โลโก้สีดำลอยออกมา */
+            filter: drop-shadow(2px 2px 0px white) 
+                drop-shadow(-2px -2px 0px white) 
+                drop-shadow(2px -2px 0px white) 
+                drop-shadow(-2px 2px 0px white)
+                drop-shadow(0px 0px 20px rgba(255, 255, 255, 0.5)); /* แสงเรืองรอบๆ */
+
+            transition: 0.5s ease-in-out;
+        }
+        .main-logo:hover { 
+            transform: scale(1.05); /* เวลามือชี้ให้ขยายอีกนิดหน่อย */
+        }
+
+        /* ส่วนทีมงาน */
+        .team-section { padding: 40px 0 60px 0; }
+        .section-title {
+            color: #dc3545;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 50px;
+            text-align: center;
+        }
+        
+        .team-card {
+            background-color: #1a1a1a;
+            border: 1px solid #333;
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            transition: 0.3s;
+            height: 100%;
+        }
+        .team-card:hover { border-color: #dc3545; transform: translateY(-5px); }
+        .team-photo {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #dc3545;
+            margin-bottom: 20px;
+        }
+        .team-name { font-size: 1.4rem; font-weight: bold; color: white; margin-bottom: 5px; }
+        .team-role { color: #bbb; font-size: 0.9rem; text-transform: uppercase; margin-bottom: 20px; }
+        
+        .btn-facebook {
+            background-color: #3b5998;
+            color: white;
+            border-radius: 50px;
+            padding: 10px 25px;
+            font-size: 0.9rem;
+            text-decoration: none;
+            display: inline-block;
+            transition: 0.3s;
+        }
+        .btn-facebook:hover { background-color: #2d4373; color: white; }
+
+        /* ส่วนดาวน์โหลด (ย้ายมาไว้ข้างล่าง) */
+        .download-section {
+            padding: 60px 0;
+            text-align: center;
+            background: linear-gradient(180deg, #0a0a0a 0%, #1a0000 100%);
+            border-top: 2px solid #dc3545;
+        }
+
+        .btn-download {
+            padding: 18px 45px;
+            font-size: 1.6rem;
+            font-weight: bold;
+            border-radius: 50px;
+            background: linear-gradient(45deg, #bd2130, #dc3545);
+            border: none;
+            color: white;
+            text-transform: uppercase;
+            transition: 0.3s;
+            box-shadow: 0 5px 15px rgba(220, 53, 69, 0.3);
+            text-decoration: none;
+            display: inline-block;
+        }
+        .btn-download:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(220, 53, 69, 0.5);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="logo-section">
+        <div class="container">
+            <img src="images/LOGO.png" alt="KonradFamily" class="main-logo">
+            <h1 class="display-5 fw-bold" style="color: white;">KONRAD <span style="color: #dc3545;">Family</span></h1>
+        </div>
+    </div>
+
+    <div class="container team-section">
+        <h2 class="section-title">Member Konrad</h2>
+        
+        <div class="row g-4 justify-content-center">
+            <div class="col-lg-4 col-md-6">
+                <div class="team-card">
+                    <img src="images/Tiger.jpeg" alt="Tiger Konrad" class="team-photo">
+                    <div class="team-name">Tiger Konrad</div>
+                    <div class="team-role">Leader Konrad</div>
+                    <a href="https://www.facebook.com/tiger.konrad" target="_blank" class="btn btn-facebook">
+                        <i class="fab fa-facebook-f me-2"></i> Facebook
+                    </a>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6">
+                <div class="team-card">
+                    <img src="images/Leo.jpg" alt="Leo Konrad" class="team-photo">
+                    <div class="team-name">Leo Konrad</div>
+                    <div class="team-role">Leader Konrad</div>
+                    <a href="https://www.facebook.com/leo.konrad.2025" target="_blank" class="btn btn-facebook">
+                        <i class="fab fa-facebook-f me-2"></i> Facebook
+                    </a>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6">
+                <div class="team-card">
+                    <img src="images/Zod.jpg" alt="Zodd Konrad" class="team-photo">
+                    <div class="team-name">Zodd Konrad</div>
+                    <div class="team-role">Leader Konrad</div>
+                    <a href="https://www.facebook.com/Zoddbastien" target="_blank" class="btn btn-facebook">
+                        <i class="fab fa-facebook-f me-2"></i> Facebook
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="team-card">
+                    <img src="images/Zoey.jpg" alt="Zoey Konrad" class="team-photo">
+                    <div class="team-name">Zoey Konrad</div>
+                    <div class="team-role">Member</div>
+                    <a href="https://www.facebook.com/zoey.konrad" target="_blank" class="btn btn-facebook">
+                        <i class="fab fa-facebook-f me-2"></i> Facebook
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="team-card">
+                    <img src="images/Bxbe.jpg" alt="Bxbe Konrad" class="team-photo">
+                    <div class="team-name">Bxbe Konrad</div>
+                    <div class="team-role">Member</div>
+                    <a href="https://www.facebook.com/bxbe.konrad" target="_blank" class="btn btn-facebook">
+                        <i class="fab fa-facebook-f me-2"></i> Facebook
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="team-card">
+                    <img src="images/KwangThung.jpg" alt="KwangThung Konrad" class="team-photo">
+                    <div class="team-name">KwangThung Konrad</div>
+                    <div class="team-role">Member</div>
+                    <a href="https://www.facebook.com/kwangthung.konrad" target="_blank" class="btn btn-facebook">
+                        <i class="fab fa-facebook-f me-2"></i> Facebook
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="team-card">
+                    <img src="images/Rosemary.jpg" alt="Rosemary Feellike" class="team-photo">
+                    <div class="team-name">Rosemary Feellike</div>
+                    <div class="team-role">Member</div>
+                    <a href="https://www.facebook.com/melody.jxsttry" target="_blank" class="btn btn-facebook">
+                        <i class="fab fa-facebook-f me-2"></i> Facebook
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="team-card">
+                    <img src="images/Window.jpg" alt="Window Konrad" class="team-photo">
+                    <div class="team-name">Window S. Konrad</div>
+                    <div class="team-role">Member</div>
+                    <a href="https://www.facebook.com/window.s.konrad" target="_blank" class="btn btn-facebook">
+                        <i class="fab fa-facebook-f me-2"></i> Facebook
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="team-card">
+                    <img src="images/Manee.jpg" alt="Manee Konrad" class="team-photo">
+                    <div class="team-name">Manee Konrad</div>
+                    <div class="team-role">Member</div>
+                    <a href="https://www.facebook.com/manee.konrad" target="_blank" class="btn btn-facebook">
+                        <i class="fab fa-facebook-f me-2"></i> Facebook
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="team-card">
+                    <img src="images/Khaotang.jpg" alt="Khaotang Konrad" class="team-photo">
+                    <div class="team-name">Khaotang Konrad</div>
+                    <div class="team-role">Member</div>
+                    <a href="https://www.facebook.com/khaotang.konrad" target="_blank" class="btn btn-facebook">
+                        <i class="fab fa-facebook-f me-2"></i> Facebook
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="team-card">
+                    <img src="images/Arneiry.jpg" alt="Armeiry Konrad" class="team-photo">
+                    <div class="team-name">Armeiry Konrad</div>
+                    <div class="team-role">Member</div>
+                    <a href="https://www.facebook.com/armeiry.konrad" target="_blank" class="btn btn-facebook">
+                        <i class="fab fa-facebook-f me-2"></i> Facebook
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="text-center mt-5 text-muted py-3">
+        <small>&copy; 2026 KONRAD SHOP. All rights reserved.</small>
+    </footer>
+
+</body>
+</html>
